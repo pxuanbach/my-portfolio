@@ -33,6 +33,7 @@
     --z-fixed: 100;
 
     /* vertical space */
+    --largest-v-space: 100px;
     --large-v-space: 60px;
     --medium-v-space: 40px;
     --small-v-space: 24px;
@@ -126,7 +127,7 @@ img {
 }
 
 .content__section{
-    margin-bottom: var(--large-v-space);
+    margin-bottom: var(--largest-v-space);
 }
 
 .content__welcome_text {
@@ -142,20 +143,29 @@ img {
     margin-bottom: var(--smaller-v-space);
 }
 
+.break{
+    margin-bottom: var(--small-v-space);
+}
+
 .large_first_letter::first-letter {
     font-size: 200%;
 }
 
 .content__section_title{
-    margin-bottom: var(--small-v-space);
+    margin-bottom: var(--medium-v-space);
 }
 
-.content__section_body > h3{
+.content__section_body h3{
     font-size: var(--h3-font-size);
-    margin-top: var(--small-v-space);
-    margin-bottom: var(--smaller-v-space);
+    margin-bottom: var(--smaller-v-space); 
 }
 .content__section_body > p{
     font-size: var(--normal-font-size);
     line-height: calc(var(--normal-font-size)*1.5);
 }
+
+.title__space_between{
+    display: flex;
+    justify-content: space-between;
+}
+

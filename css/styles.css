@@ -120,7 +120,6 @@ img {
     margin-left: var(--medium-h-space);
 }
 
-
 .content {
     flex: 7;
     padding: 0 var(--medium-h-space);
@@ -169,3 +168,8 @@ img {
     justify-content: space-between;
 }
 
+
+.copyright{
+    justify-content: center;
+    padding: var(--small-v-space) 0px;
+}

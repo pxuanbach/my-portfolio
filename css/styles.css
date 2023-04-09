@@ -80,6 +80,12 @@ a {
     border-bottom: 1px dotted var(--text-color-light);
 }
 
+[class^="ri-"] {
+    padding: 0;
+    position: relative;
+    bottom: -3px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -102,8 +108,33 @@ img {
 .sidebar {
     flex: 2;
     display: flex;
+}
+
+.sidebar__box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+}
+
+.fixed{
+    position: fixed;
+    display: flex;
     flex-direction: column;
-    gap: var(--medium-v-space);
+    gap: var(--small-v-space);
+    margin: 0 auto;
+    width: 100%;
+    max-width: inherit;
+}
+
+.sidebar__avatar{
+    display: flex;
+    max-width: 100%
+}
+.sidebar__avatar > img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .sidebar__logo {
@@ -118,6 +149,20 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: var(--medium-h-space);
+}
+
+.sidebar__utils{
+    display: flex;
+    gap: var(--small-h-space);
+    padding: 0 var(--small-h-space);
+}
+
+.utils__btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: var(--h1-font-size);
+    color: var(--text-color);
 }
 
 .content {

@@ -1,304 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pxuanbach's Portfolio</title>
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Remix icon CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="sidebar__box">
-                <img class="sidebar_avatar" src="/assets/me.jpg" alt="Pxuanbach Avatar">
-
-                <div class="sidebar__logo">
-                    <a href="">Pxuanbach's Portfolio</a>
-                </div>
-
-                <ul class="sidebar__menu">
-                    <li class="sidebar__item">
-                        <a href="#about">
-                            <i class="ri-hashtag"></i>
-                            About
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#education">
-                            <i class="ri-building-line"></i>
-                            Education
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#skills">
-                            <i class="ri-git-repository-line"></i>
-                            Skills
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#work">
-                            <i class="ri-shopping-bag-fill"></i>
-                            Work
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#projects">
-                            <i class="ri-git-branch-line"></i>
-                            Projects
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="#contact">
-                            <i class="ri-mail-line"></i>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar__box" id="sidebar__box">
+          <div class="fixed" id="fixed">
+            <div class="sidebar__avatar" id="sidebar__avatar">
+              <img
+                src="./assets/me.png"
+                alt="Pxuanbach Avatar"
+              />
             </div>
 
+            <div class="sidebar__logo">
+              <a href="">Pxuanbach's Portfolio</a>
+            </div>
+
+            <ul class="sidebar__menu">
+              <li class="sidebar__item">
+                <a href="#about">
+                  <i class="ri-hashtag"></i>
+                  About
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#education">
+                  <i class="ri-building-line"></i>
+                  Education
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#skills">
+                  <i class="ri-git-repository-line"></i>
+                  Skills
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#work">
+                  <i class="ri-shopping-bag-fill"></i>
+                  Work
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#projects">
+                  <i class="ri-git-branch-line"></i>
+                  Projects
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#contact">
+                  <i class="ri-mail-line"></i>
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+            <ul class="sidebar__utils">
+              <li>
+                <abbr title="Print">
+                  <button class="utils__btn" id="print-btn">
+                    <i class="ri-printer-line"></i>
+                  </button>
+                </abbr>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" id="content">
+        <div class="content__section">
+          <h1 class="content__welcome_text">Welcome to my portfolio!</h1>
         </div>
 
-        <div class="content">
-            <div class="content__section">
-                <h1 class="content__welcome_text">Welcome to my portfolio!</h1>
-            </div>
-
-            <!-- ABOUT -->
-            <div class="content__section">
-                <h1 class="content__section_title">
-                    <a href="#about" id="about"><i class="ri-hashtag"></i> About</a>
-                </h1>
-                <div class="content__section_body">
-                    <p class="content__normal_text large_first_letter">
-                        Hi!
-                        My name is Pham Xuan Bach.
-                        I am a <b>software engineer, back-end and web developer</b>.
-                        I have worked on a variety of different projects, such as design posting applications,
-                        e-commerce
-                        platforms, systems with dynamic roles, etc.
-                    </p>
-                    <p class="content__normal_text break">
-                        I am also passionate about learning and constantly updating myself with the
-                        latest technologies to ensure that I can provide the best solutions for my clients.
-                    </p>
-                </div>
-            </div>
-
-            <!-- EDUCATION -->
-            <div class="content__section">
-                <h1 class="content__section_title">
-                    <a href="#education" id="education"><i class="ri-building-line"></i> Education</a>
-                </h1>
-                <div class="content__section_body">
-                    <div class="title__space_between">
-                        <h3>
-                            <a target="_blank" href="https://www.uit.edu.vn/">University of Information Technology</a>
-                        </h3>
-                        <h3>
-                            2019 - Present
-                        </h3>
-                    </div>
-                    <p class="content__normal_text">
-                        <i class="ri-award-fill"></i>
-                        Major: Software engineer
-                    </p>
-                    <p class="content__normal_text break">
-                        <i class="ri-award-fill"></i>
-                        GPA: 8.55
-                    </p>
-                </div>
-            </div>
-
-            <!-- SKILLS -->
-            <div class="content__section">
-                <h1 class="content__section_title">
-                    <a href="#skills" id="skills">
-                        <i class="ri-git-repository-line"></i>
-                        Skills
-                    </a>
-                </h1>
-                <div class="content__section_body">
-                    <div class="title__space_between">
-                        <h3>Python:</h3>
-                    </div>
-                    <p class="content__normal_text break">
-                        <i class="ri-send-plane-2-fill"></i>
-                        FastAPI, SQLAlchemy, etc.
-                    </p>
-                    <h3>JavaScript:</h3>
-                    <p class="content__normal_text break">
-                        <i class="ri-send-plane-2-fill"></i>
-                        NodeJS, ExpressJS, NestJS, SocketIO, etc.
-                    </p>
-                    <h3>Database:</h3>
-                    <p class="content__normal_text">
-                        <i class="ri-send-plane-2-fill"></i>
-                        SQL: SQLite, Microsoft SQL Server (MSSQL), PostgreSQL, etc.
-                    </p>
-                    <p class="content__normal_text break">
-                        <i class="ri-send-plane-2-fill"></i>
-                        NoSQL: MongoDB, Redis, Firebase, etc.
-                    </p>
-                    <h3>Message Queue:</h3>
-                    <p class="content__normal_text break">
-                        <i class="ri-send-plane-2-fill"></i>
-                        Apache Kafka
-                    </p>
-                    <h3>Others:</h3>
-                    <p class="content__normal_text break">
-                        <i class="ri-send-plane-2-fill"></i>
-                        Docker, Postman, JIRA, Bash, Github, Gitlab, CI/CD,... etc.
-                    </p>
-                </div>
-            </div>
-
-            <!-- WORK -->
-            <div class="content__section">
-                <h1 class="content__section_title">
-                    <a href="#work" id="work">
-                        <i class="ri-shopping-bag-fill"></i>
-                        Work
-                    </a>
-                </h1>
-                <div class="content__section_body">
-                    <div class="title__space_between">
-                        <h3>
-                            <a target="_blank" href="https://tisoha.com/">Tisoha Software Solutions</a>,
-                            Intern & Fresher Developer
-                        </h3>
-                        <h3>06/2022 - Present</h3>
-                    </div>
-                    <p class="content__normal_text">
-                        Work with the senior developer to create a new API, and solve business logic.
-                    </p>
-                    <p class="content__normal_text">
-                        Write modern, performant, maintainable code for a diverse array of client
-                        and internal projects.
-                    </p>
-                    <p class="content__normal_text">
-                        Communicate with multi-disciplinary teams of engineers, designers,
-                        and clients on a daily basis.
-                    </p>
-                </div>
-            </div>
-
-            <!-- PROJECTS -->
-            <div class="content__section">
-                <h1 class="content__section_title">
-                    <a href="#projects" id="projects">
-                        <i class="ri-git-branch-line"></i>
-                        Projects
-                    </a>
-                </h1>
-                <div class="content__section_body">
-                    <div class="title__space_between">
-                        <h3>
-                            <a target="_blank" href="https://madethemark.com/">Mark Platform</a>
-                        </h3>
-                        <h3>07/2022 - Present</h3>
-                    </div>
-                    <p class="content__normal_text">
-                        <i>The Mark Platform is a review and discovery platform for interior designers in Singapore.</i>
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        Work with dynamic role-based authorization.
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        Trigger email delivery events and configure mail servers.
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        Integrate Stripe payment APIs.
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        Test APIs, Model.
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        Deploy and maintaince code.
-                    </p>
-                    <p class="content__normal_text">
-                        <b>Tools:</b> Python, FastAPI, PostgreSQL, Docker, SQLAlchemy, Pytest, Poetry, Alembic, FastAPI
-                        Users, APScheduler.
-                    </p>
-                </div>
-                <br>
-                <div class="content__section_body">
-                    <div class="title__space_between">
-                        <h3>
-                            <a target="_blank" href="https://www.vict-vn.com/">VICT Module</a>
-                        </h3>
-                        <h3>10/2022 - 12/2022</h3>
-                    </div>
-                    <p class="content__normal_text">
-                        <i>VICT Module is a user management and procedure execution service in VICT's database
-                            system.</i>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        User role-based permissions & authentication.
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        Connect multiple database (connect to VICT’s database) and call stored procedure in that
-                        database.
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-check-line"></i>
-                        Test APIs.
-                    </p>
-                    <p class="content__normal_text">
-                        <b>Tools:</b> Python, FastAPI, PostgreSQL, Docker, SQLAlchemy, Pytest, Poetry, Alembic.
-                    </p>
-                </div>
-            </div>
-
-            <!-- CONTACT -->
-            <div class="content__section">
-                <h1 class="content__section_title">
-                    <a href="#contact" id="contact">
-                        <i class="ri-mail-line"></i>
-                        Contact
-                    </a>
-                </h1>
-                <div class="content__section_body">
-                    <p class="content__normal_text">
-                        <i class="ri-phone-fill"></i>
-                        <a target="_blank" href="tel:+8437-236-3285">(+84) 0372363285</a>
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-github-fill"></i>
-                        <a target="_blank" href="https://github.com/pxuanbach">github.com/pxuanbach</a>
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-mail-fill"></i>
-                        <a target="_blank" href="mailto:pxuanbach1412@gmail.com">pxuanbach1412@gmail.com</a>
-                    </p>
-                    <p class="content__normal_text">
-                        <i class="ri-map-pin-2-fill"></i>
-                        <a target="_blank" href="https://goo.gl/maps/iMWWgiP7UrC2WE4P6">306/40 Xo Viet Nghe Tinh, Ward
-                            25, Binh Thanh, Ho Chi Minh City, Vietnam</a>
-                    </p>
-                </div>
-            </div>
-
+        <!-- ABOUT -->
+        <div class="content__section">
+          <h1 class="content__section_title">
+            <a href="#about" id="about"><i class="ri-hashtag"></i> About</a>
+          </h1>
+          <div class="content__section_body">
+            <p class="content__normal_text large_first_letter">
+              Hi! My name is Pham Xuan Bach. I am a
+              <b>software engineer, back-end and web developer</b>. I have
+              worked on a variety of different projects, such as design posting
+              applications, e-commerce platforms, systems with dynamic roles,
+              etc.
+            </p>
+            <p class="content__normal_text break">
+              I am also passionate about learning and constantly updating myself
+              with the latest technologies to ensure that I can provide the best
+              solutions for my clients.
+            </p>
+          </div>
         </div>
+
+        <!-- EDUCATION -->
+        <div class="content__section">
+          <h1 class="content__section_title">
+            <a href="#education" id="education"
+              ><i class="ri-building-line"></i> Education</a
+            >
+          </h1>
+          <div class="content__section_body">
+            <div class="title__space_between">
+              <h3>
+                <a target="_blank" href="https://www.uit.edu.vn/"
+                  >VNUHCM - University of Information Technology</a
+                >
+              </h3>
+              <h3>2019 - Present</h3>
+            </div>
+            <p class="content__normal_text">
+              <i class="ri-award-fill"></i>
+              Major: Software engineer
+            </p>
+            <p class="content__normal_text break">
+              <i class="ri-award-fill"></i>
+              GPA: 8.31
+            </p>
+          </div>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div class="content__section">
+          <h1 class="content__section_title">
+            <a href="#cetifications" id="cetifications"
+              ><i class="ri-building-line"></i> Certifications</a
+            >
+          </h1>
+          <div class="content__section_body">
+            <div class="title__space_between">
+              <h3>
+                <a target="_blank" href="https://drive.google.com/file/d/1CDAs7O6wkaEpYz8OhqokEpyuCbxEMmwi/view?usp=sharing"
+                  >TOEIC Listening and Reading</a
+                >
+              </h3>
+              <h3>2020 - 2022</h3>
+            </div>
+            <p class="content__normal_text">
+              <i class="ri-award-fill"></i>
+              Total score: 665
+            </p>
+          </div>
+        </div>
+
+        <div class="html2pdf__page-break"></div>
+
+        <!-- SKILLS -->
+        <div class="content__section">
+          <h1 class="content__section_title">
+            <a href="#skills" id="skills">
+              <i class="ri-git-repository-line"></i>
+              Skills
+            </a>
+          </h1>
+          <div class="content__section_body">
+            <div class="title__space_between">
+              <h3>Python:</h3>
+            </div>
+            <p class="content__normal_text break">
+              <i class="ri-send-plane-2-fill"></i>
+              FastAPI, SQLAlchemy
+            </p>
+            <h3>NodeJS:</h3>
+            <p class="content__normal_text break">
+              <i class="ri-send-plane-2-fill"></i>
+              ExpressJS, NestJS, SocketIO
+            </p>
+            <h3>Database:</h3>
+            <p class="content__normal_text">
+              <i class="ri-send-plane-2-fill"></i>
+              SQL: SQLite, Microsoft SQL Server (MSSQL), PostgreSQL
+            </p>
+            <p class="content__normal_text break">
+              <i class="ri-send-plane-2-fill"></i>
+              NoSQL: MongoDB, Redis, Firebase
+            </p>
+            <h3>Message Queue:</h3>
+            <p class="content__normal_text break">
+              <i class="ri-send-plane-2-fill"></i>
+              Apache Kafka
+            </p>
+            <h3>Others:</h3>
+            <p class="content__normal_text break">
+              <i class="ri-send-plane-2-fill"></i>
+              Docker, Postman, JIRA, Bash, Github, Gitlab, CI/CD, etc
+            </p>
+          </div>
+        </div>
+
+        <div class="html2pdf__page-break"></div>
+
+        <!-- WORK -->
+        <div class="content__section">
+          <h1 class="content__section_title">
+            <a href="#work" id="work">
+              <i class="ri-shopping-bag-fill"></i>
+              Work
+            </a>
+          </h1>
+          <div class="content__section_body">
+            <div class="title__space_between">
+              <h3>
+                <a target="_blank" href="https://tisoha.com/"
+                  >Tisoha Software Solutions</a
+                >, Intern & Fresher Developer
+              </h3>
+              <h3>06/2022 - Present</h3>
+            </div>
+            <p class="content__normal_text">
+              Work with the senior developer to create a new API, and solve
+              business logic.
+            </p>
+            <p class="content__normal_text">
+              Write modern, performant, maintainable code for a diverse array of
+              client and internal projects.
+            </p>
+            <p class="content__normal_text">
+              Communicate with multi-disciplinary teams of engineers, designers,
+              and clients on a daily basis.
+            </p>
+          </div>
+        </div>
+
+        <div class="html2pdf__page-break"></div>
+
+        <!-- PROJECTS -->
+        <div class="content__section">
+          <h1 class="content__section_title">
+            <a href="#projects" id="projects">
+              <i class="ri-git-branch-line"></i>
+              Projects
+            </a>
+          </h1>
+          <div class="content__section_body">
+            <div class="title__space_between">
+              <h3>
+                <a target="_blank" href="https://madethemark.com/"
+                  >Mark Platform</a
+                >
+              </h3>
+              <h3>07/2022 - Present</h3>
+            </div>
+            <p class="content__normal_text">
+              <i
+                >The Mark Platform is a review and discovery platform for
+                interior designers in Singapore.</i
+              >
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Work with dynamic role-based authorization.
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Trigger email delivery events and configure mail servers.
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Integrate Stripe payment APIs.
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Deploy and maintaince code.
+            </p>
+            <p class="content__normal_text">
+              <b>Tools:</b> Python, FastAPI, PostgreSQL, Docker, Firebase, SQLAlchemy,
+              Pytest, Poetry, Alembic, FastAPI Users, APScheduler.
+            </p>
+          </div>
+          <br />
+          <div class="content__section_body">
+            <div class="title__space_between">
+              <h3>
+                <a target="_blank" href="#">HalalFoodHunt</a>
+              </h3>
+              <h3>03/2023 - Present</h3>
+            </div>
+            <p class="content__normal_text">
+              <i
+                >Halalfoodhunt is an app that verifies halal food options
+                (eateries, online businesses, caterers and more) before
+                publishing them.</i
+              >
+            </p>
+
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Create backup service.
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Fix APIs.
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Configure push notifications.
+            </p>
+            <p class="content__normal_text">
+              <b>Tools:</b> NodeJS, MeteorJS, MongoDB, Docker, Firebase.
+            </p>
+          </div>
+          <br />
+          <div class="content__section_body">
+            <div class="title__space_between">
+              <h3>
+                <a target="_blank" href="https://www.vict-vn.com/"
+                  >VICT Module</a
+                >
+              </h3>
+              <h3>10/2022 - 12/2022</h3>
+            </div>
+            <p class="content__normal_text">
+              <i
+                >VICT Module is a user management and procedure execution
+                service in VICT's database system.</i
+              >
+            </p>
+
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              User role-based permissions & authentication.
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Connect multiple database (connect to VICT’s database) and call
+              stored procedure in that database.
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-check-line"></i>
+              Test APIs.
+            </p>
+            <p class="content__normal_text">
+              <b>Tools:</b> Python, FastAPI, PostgreSQL, Docker, SQLAlchemy,
+              Pytest, Poetry, Alembic.
+            </p>
+          </div>
+        </div>
+
+        <div class="html2pdf__page-break"></div>
+
+        <!-- CONTACT -->
+        <div class="content__section" id="contact">
+          <h1 class="content__section_title">
+            <a href="#contact" id="contact">
+              <i class="ri-mail-line"></i>
+              Contact
+            </a>
+          </h1>
+          <div class="content__section_body">
+            <p class="content__normal_text">
+              <i class="ri-phone-fill"></i>
+              <a target="_blank" href="tel:+8437-236-3285">(+84) 0372363285</a>
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-github-fill"></i>
+              <a target="_blank" href="https://github.com/pxuanbach"
+                >github.com/pxuanbach</a
+              >
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-gitlab-fill"></i>
+              <a target="_blank" href="https://gitlab.com/pxuanbach1412"
+                >gitlab.com/pxuanbach1412</a
+              >
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-mail-fill"></i>
+              <a target="_blank" href="mailto:pxuanbach.dev@gmail.com"
+                >pxuanbach.dev@gmail.com</a
+              >
+            </p>
+            <p class="content__normal_text">
+              <i class="ri-map-pin-2-fill"></i>
+              <a target="_blank" href="https://goo.gl/maps/dVLcSBBCy5rcT9yE7">
+                Ho Chi Minh City, Vietnam
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="container copyright">Designed & Built by Pxuanbach.</footer>
-</body>
-<script src="js/main.js"></script>
-
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/main.js"></script>
 </html>

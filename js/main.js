@@ -57,12 +57,20 @@ function reStyleCss(elm) {
       node.childNodes[1].style.marginBottom = marginBottomValue;
       if (node.childNodes[3].childNodes[1].className.includes('content__normal_text')) {
         node.childNodes[3].childNodes[1].className = 'content__normal_text'
-      } else if (node.childNodes[3].childNodes[1].className.includes('title__space_between')) {
-        node.childNodes[3].childNodes[1].childNodes[1].style.fontSize = '18px';
-        if (node.childNodes[3].childNodes[1].childNodes.length > 3) {
-          node.childNodes[3].childNodes[1].childNodes[3].style.fontSize = '18px';
+      } 
+      
+      node.childNodes.forEach(cNode => {
+        if (cNode.className === "content__section_body") {
+          cNode.childNodes.forEach(n => {
+            if (n.className === "title__space_between") {
+              n.childNodes[1].style.fontSize = '18px'
+              if (n.childNodes.length > 3) {
+                n.childNodes[3].style.fontSize = '18px'
+              }
+            }
+          })
         }
-      }
+      })
 
       // styling Projects
       if (node.childNodes[1].textContent.includes("Projects")) {

@@ -42,7 +42,9 @@ function headerPortfolio() {
 function reStyleCss(elm) {
   const clone = elm.cloneNode(true);
   let isFirst = 0
-  clone.childNodes.forEach(node => {
+  let indexBreakArr = []
+
+  clone.childNodes.forEach((node, index) => {
     if (node.className === "content__section") {
       // remove node "Welcome to..."
       if (isFirst === 0) {
@@ -89,11 +91,21 @@ function reStyleCss(elm) {
       if (node.childNodes[1].textContent.includes("Contact")) {
         clone.removeChild(node);
       }
-      
+
+      // break page
+      if (node.childNodes[1].textContent.includes("Work") 
+      || node.childNodes[1].textContent.includes("Skills")) {
+        indexBreakArr.push(index)
+      }
     }
   });
   const header = headerPortfolio();
   clone.insertBefore(header, clone.childNodes[0])
+  indexBreakArr.forEach(value => {
+    const divBreak = document.createElement('div');
+    divBreak.className = "html2pdf__page-break"
+    clone.insertBefore(divBreak, clone.childNodes[value])
+  })
   return clone
 }
 

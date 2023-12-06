@@ -19,7 +19,7 @@
     --h1-font-size: 28px;
     --h2-font-size: 24px;
     --h3-font-size: 20px;
-    --normal-font-size: 16px;
+    --normal-font-size: 14px;
     --small-font-size: 12px;
     --smaller-font-size: 8px;
 
@@ -36,8 +36,8 @@
     --largest-v-space: 100px;
     --large-v-space: 60px;
     --medium-v-space: 40px;
-    --small-v-space: 24px;
-    --smaller-v-space: 12px;
+    --small-v-space: 12px;
+    --smaller-v-space: 6px;
 
     /* horizontal space */
     --large-h-space: 60px;
@@ -176,14 +176,14 @@ img {
 
 .content__welcome_text {
     font-size: var(--biggest-font-size);
-    line-height: calc(var(--biggest-font-size)*1.5);
+    line-height: calc(var(--biggest-font-size)*1.2);
     font-family: var(--title-font);
     margin-top: var(--small-v-space);
 }
 
 .content__normal_text {
     font-size: var(--normal-font-size);
-    line-height: calc(var(--normal-font-size)*1.5);
+    line-height: calc(var(--normal-font-size)*1.2);
     margin-bottom: var(--smaller-v-space);
 }
 

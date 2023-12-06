@@ -26,15 +26,15 @@ function headerPortfolio() {
     </p>
   `
 
-  contactBody.childNodes.forEach(node => {
-    if (node.className === 'content__normal_text') {
-      const c = node.cloneNode(true)
-      c.style.marginBottom = '6px'
-      content.appendChild(c)
-    }
-  });
+  // contactBody.childNodes.forEach(node => {
+  //   if (node.className === 'content__normal_text') {
+  //     const c = node.cloneNode(true)
+  //     c.style.marginBottom = '6px'
+  //     content.appendChild(c)
+  //   }
+  // });
 
-  container.appendChild(avatar);
+  // container.appendChild(avatar);
   container.appendChild(content);
   return container;
 }
@@ -54,8 +54,8 @@ function reStyleCss(elm) {
       }
 
       // style
-      node.style.marginBottom = '24px';
-      node.childNodes[1].style.fontSize = '22px';
+      node.style.marginBottom = '18px';
+      node.childNodes[1].style.fontSize = '18px';
       node.childNodes[1].style.marginBottom = marginBottomValue;
       if (node.childNodes[3].childNodes[1].className.includes('content__normal_text')) {
         node.childNodes[3].childNodes[1].className = 'content__normal_text'
@@ -66,7 +66,7 @@ function reStyleCss(elm) {
           cNode.childNodes.forEach(n => {
             if (n.className === "title__space_between") {
               n.childNodes[1].style.fontSize = '18px'
-              if (n.childNodes.length > 3) {
+              if (n.childNodes.length > 3 && n.childNodes[3].style?.fontSize !== undefined) {
                 n.childNodes[3].style.fontSize = '18px'
               }
             }
@@ -94,7 +94,8 @@ function reStyleCss(elm) {
 
       // break page
       if (node.childNodes[1].textContent.includes("Work") 
-      || node.childNodes[1].textContent.includes("Skills")) {
+      // || node.childNodes[1].textContent.includes("Skills")
+    ) {
         indexBreakArr.push(index)
       }
     }
